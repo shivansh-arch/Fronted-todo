@@ -1,0 +1,80 @@
+/* Whole page dark background */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* Input and button styling */
+.todo-input {
+  padding: 10px;
+  margin: 10px 0;
+  width: 90%;
+  max-width: 500px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background-color: #1f1f1f;
+  color: white;
+}
+
+.todo-input::placeholder {
+  color: #aaa;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.complete-btn {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.show-btn {
+  background-color: #10b981;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  display: block;
+  margin: 20px auto;
+  font-size: 16px;
+}
+
+/* Todo card style */
+.todo-card {
+  background: #1f1f1f;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.todo-card h3 {
+  margin: 0;
+  color: #ffffff;
+}
+
+.todo-card p {
+  margin: 8px 0;
+  color: #cbd5e1;
+}
