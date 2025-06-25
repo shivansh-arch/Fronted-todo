@@ -6,7 +6,8 @@ export function ShowTodos() {
 
   const handleShowTodos = () => {
     if (!visible) {
-      fetch("http://localhost:3000/todos")
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/todos`)
+
         .then(async (res) => {
           const json = await res.json();
           setTodos(json.todos);
