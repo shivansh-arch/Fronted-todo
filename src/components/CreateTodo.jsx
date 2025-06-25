@@ -10,7 +10,8 @@ export function CreateTodo() {
       return;
     }
 
-    fetch("http://localhost:3000/todo", {
+   fetch(`${import.meta.env.VITE_BACKEND_URL}/todo`)
+, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
