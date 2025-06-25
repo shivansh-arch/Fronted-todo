@@ -1,7 +1,7 @@
 export function Todos({ todos }) {
   const markAsCompleted = async (id) => {
     try {
-      const res = await fetch(`${import.meta.env.VITE_BACKEND_URL/completed}`)
+      const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/completed`)
 , {
         method: "PUT",
         headers: {
