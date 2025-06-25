@@ -17,7 +17,7 @@ export function CreateTodo() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ title, description }),
-    })
+    });
       .then(async (res) => {
         const json = await res.json();
         alert("✅ Todo created!");
