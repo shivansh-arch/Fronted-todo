@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+
 import './App.css';
 import { CreateTodo } from './components/CreateTodo';
 import { Todos } from './components/Temp';
@@ -8,7 +9,8 @@ function App() {
   const [showTodos, setShowTodos] = useState(false); // toggle state
 
   const fetchTodos = () => {
-    fetch("http://localhost:3000/todos")
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/todos`)
+
       .then(async (res) => {
         const json = await res.json();
         setTodos(json.todos);
