@@ -5,7 +5,7 @@ export function Todos({ todos }) {
 , {
         method: PUT,
         headers: {
-          "Content-Type": "application/json" // ✅ no space after slash
+          "Content-Type":"application/json" // ✅ no space after slash
         },
         body: JSON.stringify({
           id: id
