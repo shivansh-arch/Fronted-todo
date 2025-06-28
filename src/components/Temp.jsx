@@ -3,7 +3,7 @@ export function Todos({ todos }) {
     try {
       const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/completed`)
 , {
-        method: "PUT",
+        method:"PUT",
         headers: {
           "Content-Type":"application/json" // ✅ no space after slash
         },
