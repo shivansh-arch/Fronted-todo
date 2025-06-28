@@ -1,16 +1,15 @@
 export function Todos({ todos }) {
   const markAsCompleted = async (id) => {
     try {
-      const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/completed`)
-, {
-        method:"PUT",
-        headers: {
-          "Content-Type":"application/json" // ✅ no space after slash
-        },
-        body: JSON.stringify({
-          id: id
-        })
-      });
+     const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/completed`, {
+  method: "PUT",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    id: id
+  })
+});
 
       const data = await res.json();
       alert(data.msg || "Marked as completed");
